@@ -151,4 +151,12 @@ public class DisplayActivity extends AppCompatActivity implements NavigationView
         startActivity(intent);
         finish();
     }
+
+    public void callregisterlostitemactivity
+            (View v)
+    {
+        Intent in = new Intent(DisplayActivity.this,RegisterLostItemActivity.class);
+        startActivity(in);
+
+    }
 }
