@@ -20,7 +20,10 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".DisplayActivity" />
         <activity android:name=".RegisterLostItemActivity" />
-        <activity android:name=".ReportFounditemActivity"></activity>
+        <activity android:name=".ReportFounditemActivity" />
+        <activity android:name=".RetrieveFoundItemActivity" />
+        <activity android:name=".RetrieveLostItemActivity" />
+        <activity android:name=".RecyclerViewAdapter"></activity>
     </application>
 
 </manifest>
