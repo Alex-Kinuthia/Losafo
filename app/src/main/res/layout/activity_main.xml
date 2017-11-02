@@ -115,7 +115,35 @@
                 android:layout_below="@+id/btnrg"
                 android:layout_marginTop="10dp"/>
 
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:text="Retrieve Lost Items"
+                android:textSize="16dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#f2d51a"
+                android:background="#fff"
+                android:drawableRight="@drawable/ic_vertical_align_bottom_black_24dp"
+                android:id="@+id/txtfaq"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/btnrg" />
 
+            <TextView
+                android:layout_width="140dp"
+                android:layout_height="80dp"
+                android:text="Retrieve Found Items"
+                android:textSize="16dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#f2d51a"
+                android:background="#fff"
+                android:drawableRight="@drawable/ic_vertical_align_bottom_black_24dp"
+                android:id="@+id/txtl"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/btnrg" />
 
         </LinearLayout>
     </LinearLayout>

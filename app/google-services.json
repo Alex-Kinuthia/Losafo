@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "421368622211",
+    "firebase_url": "https://losafo-fbfd5.firebaseio.com",
+    "project_id": "losafo-fbfd5",
+    "storage_bucket": "losafo-fbfd5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421368622211:android:f1215063dd71c132",
+        "android_client_info": {
+          "package_name": "com.example.alex.losafo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421368622211-9iib4n6vv6d974vrpumk9ib2q45h29h5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alex.losafo",
+            "certificate_hash": "2c74a4c21bf872f93c49501b2551790782fb325e"
+          }
+        },
+        {
+          "client_id": "421368622211-vt90bkp7d3p4kkml4hjpud6ic3pq2pl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8GWFXTQANuFf_fwdw9UOJpFhDUCX8T98"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421368622211-vt90bkp7d3p4kkml4hjpud6ic3pq2pl7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

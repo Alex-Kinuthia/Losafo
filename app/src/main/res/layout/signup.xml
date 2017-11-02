@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alex.losafo.SignupActivity">
+
+    <!-- signup progress -->
+    <ProgressBar
+        android:id="@+id/signup_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal">
+
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/signup_lastname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:layout_alignParentRight="true"
+        />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/signup_name"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/servicetype"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Service Type"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/signup_email"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/companyname"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Company Name"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/servicetype"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/location"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/companyname"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/userName"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/location"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textEmailAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/userName"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/email_sign_up_button"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorIcons"
+        android:background="@drawable/login_btn_bg"
+        android:text="@string/action_sign_up"
+        android:textStyle="bold"
+        android:layout_below="@+id/password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    </RelativeLayout>
+</ScrollView>
+    </LinearLayout>
+

@@ -18,6 +18,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegisterLostItemActivity extends AppCompatActivity {
+    private static final String SAVE_URL = "https://lostandfoundhk.000webhostapp.com/registerlostitem.php";
+
 
     public static final String KEY_NAME = "names";
     public static final String KEY_CONTACT = "contacts";

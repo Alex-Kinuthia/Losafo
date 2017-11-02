@@ -17,16 +17,17 @@
         android:layout_height="wrap_content">
         <TableRow>
 
-        <ImageView
-            android:layout_width="124sp"
-            android:layout_height="124sp"
-            android:id="@+id/icon"
-            android:src="@drawable/icon"
-            android:height="180sp"
-            android:width="180sp"
-            android:layout_gravity="left"
-          />
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="124sp"
+                android:layout_height="124sp"
+                android:layout_gravity="left"
+                android:width="180sp"
+                android:height="180sp"
+                android:layout_marginLeft="50px"
+                android:src="@drawable/icon" />
         </TableRow>
+
 
         <TableRow>
             <TextView

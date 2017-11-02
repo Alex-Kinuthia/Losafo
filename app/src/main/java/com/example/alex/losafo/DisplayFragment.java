@@ -52,13 +52,13 @@ public class DisplayFragment extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         if (v == mGetAidTips) {
-            Intent intent = new Intent(getActivity(), ItemCodeActivity.class);
+            Intent intent = new Intent(getActivity(), RetrieveFoundItemActivity.class);
             startActivity(intent);
         }if (v == mGetStarted){
-            Intent intent = new Intent(getActivity(), FindActivity.class);
+            Intent intent = new Intent(getActivity(), RetrieveLostItemActivity.class);
             startActivity(intent);
         }if (v == mGoProfile){
-            Intent intent = new Intent(getActivity(), EmergencyActivity.class);
+            Intent intent = new Intent(getActivity(), RetrieveFoundItemActivity.class);
             startActivity(intent);
         }if (v == mGoProfile){
             Intent intent = new Intent(getActivity(), RetrieveFoundItemActivity.class);

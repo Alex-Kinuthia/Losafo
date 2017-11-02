@@ -43,9 +43,9 @@ public class ReportFounditemActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        this.getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.report);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
+       this.getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_report_founditem);
 
         etname = (EditText) findViewById(R.id.etname);
@@ -130,5 +130,8 @@ public class ReportFounditemActivity extends AppCompatActivity {
         etdate.getText().clear();
     }
 }
+
+
+
 
 
