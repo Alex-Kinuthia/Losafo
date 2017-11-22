@@ -9,20 +9,15 @@
     android:background="@color/primary_dark"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-    tools:context="com.example.alex.losafo.Home.FragmentServe">
+    tools:context="com.example.alex.losafo.Home.FragmentServe"
+    android:weightSum="1">
 
-    <EditText
-        android:id="@+id/servicetype"
+    <Spinner
+        android:id="@+id/spinner_report"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@color/primary"
-        android:hint="Servive Type: e.g motorbike/hotels"
-        android:padding="8dp"
-        android:singleLine="true"
-        android:inputType="textCapWords"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:entries="@array/service"
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/owner_name"
@@ -39,28 +34,27 @@
 
     <Button
         android:id="@+id/btnReportLost"
-        android:layout_width="292dp"
+        android:layout_width="237dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
         android:layout_marginTop="20dip"
         android:background="@color/primary"
         android:text="Find"
-        android:layout_marginLeft="25dp"
         android:textColor="@color/white" />
     <!-- Login Button -->
-
     <Spinner
-        android:id="@+id/spinner_report"
-        android:layout_width="175dp"
+        android:id="@+id/options"
+        android:layout_marginLeft="195dp"
+        android:layout_width="168dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="170dp"
-        android:entries="@array/reports"
+        android:entries="@array/options"
         android:padding="10dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="List Found :"
-        android:textSize="25dp"/>
+    <include
+        layout="@layout/activity_maps"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:layout_weight="0.75" />
 </LinearLayout>

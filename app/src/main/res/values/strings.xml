@@ -1,9 +1,38 @@
 <resources>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="str_btn_find">Find</string>
+
+    <string-array name="place_type">
+        <item>airport</item>
+        <item>atm</item>
+        <item>bank</item>
+        <item>bus_station</item>
+        <item>church</item>
+        <item>doctor</item>
+        <item>hospital</item>
+        <item>mosque</item>
+        <item>movie_theater</item>
+        <item>hindu_temple</item>
+        <item>restaurant</item>
+    </string-array>
+
+    <string-array name="place_type_name">
+        <item>Airport</item>
+        <item>ATM</item>
+        <item>Bank</item>
+        <item>Bus Station</item>
+        <item>Church</item>
+        <item>Doctor</item>
+        <item>Hospital</item>
+        <item>Mosque</item>
+        <item>Movie Theater</item>
+        <item>Hindu Temple</item>
+        <item>Restaurant</item>
+    </string-array>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string-array name="enteries">
-        <item>choose</item>
+        <item>Choose Service</item>
         <item>male</item>
         <item>female</item>
         <item>others</item>
@@ -11,6 +40,21 @@
     <string-array name="reports">
         <item>Lost</item>
         <item>Found</item>
+    </string-array>
+
+    <string-array name="options">
+        <item>Options</item>
+        <item>Chat</item>
+        <item>Call</item>
+        <item>Whislist</item>
+    </string-array>
+
+    <string-array name="service">
+        <item>Choose</item>
+        <item>taxi</item>
+        <item>Hotels</item>
+        <item>Fuel</item>
+        <item>Hospital</item>
     </string-array>
     <string-array name="device_type">
         <item>Phone</item>
