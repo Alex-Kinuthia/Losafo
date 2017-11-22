@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/primary_dark"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.example.alex.losafo.Home.FragmentServe">
+
+    <EditText
+        android:id="@+id/servicetype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/primary"
+        android:hint="Servive Type: e.g motorbike/hotels"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/owner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/primary"
+        android:hint="Location: e.g Kasa"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/btnReportLost"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="@color/primary"
+        android:text="Find"
+        android:layout_marginLeft="25dp"
+        android:textColor="@color/white" />
+    <!-- Login Button -->
+
+    <Spinner
+        android:id="@+id/spinner_report"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="170dp"
+        android:entries="@array/reports"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="List Found :"
+        android:textSize="25dp"/>
+</LinearLayout>
