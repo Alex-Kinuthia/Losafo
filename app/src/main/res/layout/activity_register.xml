@@ -38,18 +38,12 @@
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
-        <EditText
+        <Spinner
             android:id="@+id/country"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@color/primary"
-            android:hint="Enter Country"
-            android:padding="8dp"
-            android:singleLine="true"
-            android:inputType="textCapWords"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:entries="@array/country"
+            android:padding="10dp" />
 
         <EditText
             android:id="@+id/phone"
@@ -59,20 +53,6 @@
             android:background="@color/primary"
             android:hint="@string/hint_phone"
             android:inputType="phone"
-            android:padding="8dp"
-            android:singleLine="true"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:background="@color/primary"
-            android:hint="@string/hint_email"
-            android:inputType="textEmailAddress"
             android:padding="8dp"
             android:singleLine="true"
             android:textColor="@color/white"
@@ -135,6 +115,19 @@
             android:background="@color/primary"
             android:hint="@string/hint_username"
             android:inputType="textCapWords"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/primary"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
             android:padding="8dp"
             android:singleLine="true"
             android:textColor="@color/white"

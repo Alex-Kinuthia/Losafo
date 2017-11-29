@@ -109,6 +109,7 @@ public class RegisterActivity extends AppCompatActivity {
 //            finish();
 //        }
 
+
         // Register Button Click event
         btnRegister.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
