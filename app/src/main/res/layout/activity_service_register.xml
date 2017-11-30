@@ -11,18 +11,18 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="vertical"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="105dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp" >
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="REGISTER ACCOUNT"
-            android:textSize="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_height="match_parent"
+            android:text="Offer Services Online :"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_marginLeft="50dp"/>
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
 
         <EditText
             android:id="@+id/name"
@@ -34,6 +34,32 @@
             android:padding="8dp"
             android:singleLine="true"
             android:inputType="textCapWords"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/servicetype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/primary"
+            android:hint="Enter Service Type"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/companyname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/primary"
+            android:hint="Enter Company Name"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+            android:singleLine="true"
             android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
@@ -148,17 +174,6 @@
             android:layout_marginTop="20dip"
             android:background="@null"
             android:text="@string/btn_link_to_login"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
-
-        <Button
-            android:id="@+id/servicetype"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dip"
-            android:background="@null"
-            android:text="Register Service ?"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="15sp" />

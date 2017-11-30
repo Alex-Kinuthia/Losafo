@@ -3,9 +3,9 @@ package com.example.alex.losafo;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,13 +25,11 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-
-public class RegisterActivity extends AppCompatActivity {
+public class ServiceRegisterActivity extends AppCompatActivity {
 
     private static final String TAG = RegisterActivity.class.getSimpleName();
     private Button btnRegister;
     private Button btnLinkToLogin;
-    private Button servicetype;
     private EditText inputFullName;
     private EditText inputUsername;
     private EditText inputEmail;
@@ -52,7 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_service_register);
 
         spinner = (Spinner) findViewById(R.id.spinner);
         adapter = ArrayAdapter.createFromResource(this,R.array.enteries,R.layout.support_simple_spinner_dropdown_item);
@@ -89,7 +87,6 @@ public class RegisterActivity extends AppCompatActivity {
         inputRePassword = (EditText) findViewById(R.id.re_password);
         btnRegister = (Button) findViewById(R.id.btnRegister);
         btnLinkToLogin = (Button) findViewById(R.id.btnLinkToLoginScreen);
-        servicetype = (Button) findViewById(R.id.servicetype);
 
         // Progress dialog
         pDialog = new ProgressDialog(this);
@@ -150,16 +147,6 @@ public class RegisterActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-        servicetype.setOnClickListener(new View.OnClickListener() {
-
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),
-                        ServiceRegisterActivity.class);
-                startActivity(i);
-                finish();
-            }
-        });
     }
 
     @Override
@@ -191,7 +178,7 @@ public class RegisterActivity extends AppCompatActivity {
                             User mUser = new User(user.getEmail(),name,username,phone,selected,location);
                             mFirebaseDbRef.child(user.getUid()).setValue(mUser);
 
-                            Toast.makeText(RegisterActivity.this, R.string.user_register_success_message,
+                            Toast.makeText(ServiceRegisterActivity.this, R.string.user_register_success_message,
                                     Toast.LENGTH_SHORT).show();
                             Intent i = new Intent(getApplicationContext(),
                                     LoginActivity.class);
@@ -202,7 +189,7 @@ public class RegisterActivity extends AppCompatActivity {
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "createUserWithEmail:failure", task.getException());
-                            Toast.makeText(RegisterActivity.this, R.string.user_register_fail_message,
+                            Toast.makeText(ServiceRegisterActivity.this, R.string.user_register_fail_message,
                                     Toast.LENGTH_SHORT).show();
                         }
                         //
@@ -218,10 +205,11 @@ public class RegisterActivity extends AppCompatActivity {
     public void showProgressDialog(String message){
         if (!pDialog.isShowing())
             pDialog.setMessage(message);
-            pDialog.show();
+        pDialog.show();
     };
     public void hideProgressDialog(){
         if (pDialog.isShowing())
             pDialog.dismiss();
     };
 }
+

@@ -16,14 +16,13 @@
         android:paddingRight="20dp"
         android:weightSum="1">
 
-        <ImageView
-            android:src="@drawable/icon"
-            android:scaleType="fitCenter"
-            android:layout_gravity="center"
-            android:padding="2dp"
-            android:layout_height="152dp"
-            android:layout_width="match_parent"
-            android:contentDescription="@string/app_banner" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Account"
+        android:textSize="30dp"
+       android:layout_marginLeft="50dp"
+        android:layout_marginBottom="20dp"/>
         <Spinner
             android:id="@+id/lang_spinner"
             android:entries="@array/login_langs"
