@@ -1,4 +1,10 @@
-<FrameLayout
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <FrameLayout
 
     android:layout_width="match_parent"
 
@@ -28,7 +34,7 @@
 
         android:layout_width="match_parent"
 
-        android:layout_height="177dp"
+        android:layout_height="275dp"
 
         android:orientation="vertical">
 
@@ -41,6 +47,16 @@
             android:layout_height="wrap_content"
 
             android:text="Nearby Restaurants" />
+
+        <Button
+
+            android:id="@+id/btnGas"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Nearby Gas Stations" />
 
         <Button
 
@@ -62,5 +78,19 @@
 
             android:text="Nearby Schools" />
 
+
+        <Button
+
+            android:id="@+id/btnBanks"
+
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+
+            android:text="Nearby Banks" />
+
+
+
     </LinearLayout>
 </FrameLayout>
+</LinearLayout>
