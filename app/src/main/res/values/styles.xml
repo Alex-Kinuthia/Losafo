@@ -13,6 +13,15 @@
         <item name="alertDialogTheme">@style/AppAlertDialog</item>
     </style>
 
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+
     <!-- Custom Preference Theme inherits from the v14 support library Material Theme -->
     <style name="AppPreferenceTheme" parent="@style/PreferenceThemeOverlay.v14.Material">
         <item name="preferenceFragmentCompatStyle">@style/AppPreferenceFragmentCompatStyle</item>
